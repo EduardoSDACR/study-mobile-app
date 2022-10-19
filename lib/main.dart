@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:studyng_app/bindings/initial_bindings.dart';
+import 'package:studyng_app/configs/themes/app_light_theme.dart';
 import 'package:studyng_app/data_uploader_screen.dart';
 import 'package:studyng_app/firebase_options.dart';
 import 'package:get/get.dart';
@@ -19,7 +20,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(getPages: AppRoutes.routes());
+    return GetMaterialApp(
+      theme: LightTheme().buildLightTheme(),
+      getPages: AppRoutes.routes(),
+    );
   }
 }
 

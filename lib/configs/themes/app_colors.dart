@@ -3,6 +3,8 @@ import 'package:studyng_app/configs/themes/app_dark_theme.dart';
 import 'package:studyng_app/configs/themes/app_light_theme.dart';
 import 'package:studyng_app/configs/themes/ui_parameters.dart';
 
+const Color onSurfaceTextColor = Colors.white;
+
 const mainGradientLight = LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
